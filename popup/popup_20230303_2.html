@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>추천 적립 안내</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+        function setCookie(name, value, expiredays) {
+            var todayDate = new Date();
+            todayDate.setDate(todayDate.getDate() + expiredays);
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        }
+        
+        function check_window() {
+            setCookie("popup_20230303_2", "true", 1); // 쿠키이름_cook 은 위의 index와 같은 이름으로 변경
+            window.close();
+        }
+    </script>
+</head>
+
+<body onunload="closeWin()">
+    <form name="checkClose" style="margin-block-end: 0 !important;">
+        <div>
+            <div><img style="width:100%;" src="../data/homepopup/popup_20230303_2.png" alt="" /></div>
+            <div style="background-color: black;color:white;height:3%;"><input type="checkbox" name="event"onclick="check_window();"> 오늘 더이상 팝업창 띄우지 않기</div>
+        </div>
+    </form>
+</body>
+
+</html>

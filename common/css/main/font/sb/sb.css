@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'sb-Bold';
+	font-weight: 800;
+	font-display: swap;
+	src: local('sb Bold'), url('./ttf/sb-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'sb-Medium';
+	font-weight: 600;
+	font-display: swap;
+	src: local('sb Medium'), url('./ttf/sb-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'sb-Light';
+	font-weight: 400;
+	font-display: swap;
+	src: local('sb Light'), url('./ttf/sb-Light.ttf') format('truetype');
+}
+
+:root {
+	--font-family-sb-bold: "sb-Bold";
+	--font-family-sb-medium : "sb-Medium";
+	--font-family-sb-light: "sb-Light";
+}

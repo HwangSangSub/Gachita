@@ -1,0 +1,10 @@
+/tmap/cache/
+/logs/
+/vendor/
+/.vscode/
+/lib/dbcon.php
+/data/session
+/event/bakup
+/board/bak
+/bak/
+/test/

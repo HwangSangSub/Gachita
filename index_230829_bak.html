@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="naver-site-verification" content="e5916fc8622c28da435cc7fbbd08777e193edc7e" />
+	<meta name="keywords"
+		content="가치타, 가치, 택시합승, 택시비절약, 택시비, 택시비 비쌈, gachita, gachi, 같이타, 같이, 택시, 카풀, 택시카풀, 택시같이타기, 반값, 택시비 반값, 택시비반값, 반반택시, 절반택시, 택시비 절반, 택시 절반, 합승앱, 합승">
+	<link href="common/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<script src="common/assets/bootstrap/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+	<link rel="shortcut icon" type="image/png" href="common/img/main/favicon@2x.png" />
+	<link rel="stylesheet" type="text/css" href="common/css/main/style.css" />
+	<link rel="stylesheet" type="text/css" href="common/css/main/config.css" />
+	<script>
+		// window.onload = pageLoad;
+        // function setCookie(name, value, expiredays) {
+        //     var todayDate = new Date();
+        //     todayDate.setDate(todayDate.getDate() + expiredays);
+        //     document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        // }
+		// function pageLoad() {
+		// 	if (getCookie('popup_20230303_2') != "true") {
+		// 		window.open("popup/popup_20230303_2.html", "", "status=no ,location=no, directoryies=no, resizable=no, scrollbars=no, titlebar=no, width=615, height=1017, left=100, top=50");
+		// 	}
+		// 	if (getCookie('popup_20230303_1') != "true") {
+		// 		window.open("popup/popup_20230303_1.html", "", "status=no ,location=no, directoryies=no, resizable=no, scrollbars=no, titlebar=no, width=615, height=1017, left=715, top=50");
+		// 	}
+		// }
+
+		function toggle(id) {
+			$(".collapse").removeClass("show");
+			var src = $("#toggle_img" + id).attr("src");
+			$(".toggle_img").attr("src", "/common/img/main/icon_caret_down.svg");
+			if (src != "/common/img/main/icon_caret_up.svg") {
+				$("#toggle_img" + id).attr("src", "/common/img/main/icon_caret_up.svg");
+			} else {
+				$("#toggle_img" + id).attr("src", "/common/img/main/icon_caret_down.svg");
+			}
+		}
+		// 쿠키 가져오기 함수
+		function getCookie(cName) {
+			var x, y; var val = document.cookie.split(';');
+			for (var i = 0; i < val.length; i++) {
+				x = val[i].substr(0, val[i].indexOf('='));
+				y = val[i].substr(val[i].indexOf('=') + 1);
+				x = x.replace(/^\s+|\s+$/g, ''); // 앞과 뒤의 공백 제거하기
+				if (x == cName) {
+					return unescape(y);
+					// unescape로 디코딩 후 값 리턴
+				}
+			}
+		}
+	</script>
+	<title>가치타 - 똑똑한 카풀 택시앱!</title>
+	<meta name="description" content="같이 타고 같이 나눠내는 같이의 가치를 경험해보세요.">
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="가치타 - 똑똑한 카풀 택시앱!">
+	<meta property="og:description" content="같이 타고 같이 나눠내는 같이의 가치를 경험해보세요.">
+	<meta property="og:image" content="common/img/main/favicon@2x.png">
+	<meta property="og:url" content="https://gachita.kr">
+</head>
+
+<body>
+	<div class="header">
+		<div>
+			<h1><img src="common/img/main/toplogo.svg" alt="GACHI" /></h1>
+			<div>
+				<div class="apple">
+					<a href="http://itunes.apple.com/app/id1666745532" target="_BLANK"><img
+							src="common/img/main/apple-logo.svg" alt="" />App
+						Store</a>
+				</div>
+				<div class="google">
+					<a href="https://play.google.com/store/apps/details?id=kr.gachita.gachita" target="_BLANK"><img
+							src="common/img/main/google-logo.svg" alt="" />Google
+						Play</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content_01">
+		<div>
+			<h2 class="b1_b">
+				<div class="main_banner_text_top">
+					<div>같이 타고 같이 나누는 똑똑한 승차 공유 서비스</div>
+				</div>
+				<div class="main_banner_text_bottom">지금, 바로<BR>같이의 가치를 경험해 보세요.</div>
+			</h2>
+			<img class="main_img" src="common/img/main/main.png" alt="main">
+		</div>
+	</div>
+	<div class="content_02 mcard">
+		<div>
+			<div>
+				<h3>우리 같은 방향인데,<br /> 택시 가치타실래요?</h3>
+				<div>
+					<p>고공행진하는 택시요금. 좀 더 저렴하게 이용할 수는 없을까? 라는 생각으로부터 출발했어요. 여태 경험하지 못했던 택시 공유 서비스. 가치타와 함께 택시비를 절약해 보세요.
+					</p>
+				</div>
+			</div>
+			<div><img src="common/img/main/content1.png" alt=""></div>
+		</div>
+	</div>
+	<div class="content_03 mcard">
+		<div>
+			<div>
+				<h3>같이 타는 가치타<br /> 가치 있는 가치타.</h3>
+				<div>
+					<p>이럴때가 있어요. 막차타고 내려서 긴 줄을 기다릴때, 나와 같은 방향에 누군가와 함께 가며 비용을 나눈다면 좋겠다는 생각. 내가 이동하는 기회를 다른 누군가와 공유한다면 그
+						기회는 더욱 가치있을 거에요.</p>
+				</div>
+			</div>
+			<div><img src="common/img/main/content2.png" alt="" /></div>
+		</div>
+	</div>
+	<div class="content_04 mcard">
+		<div>
+			<div>
+				<h3>실시간 메신저를 통해<br /> 동승자와 연락할 수 있어요.</h3>
+				<div>
+					<p>동승자의 연락처를 모르더라도 괜찮아요. 실시간 채팅 기능으로 동승자와 원활한 의사소통이 가능해요.</p>
+				</div>
+			</div>
+			<div><img src="common/img/main/content3.png" alt="" /></div>
+		</div>
+	</div>
+	<div class="content_05 mcard">
+		<div>
+			<div>
+				<h3>자주 이용할수록<br /> 늘어나는 혜택은 덤.</h3>
+				<div>
+					<p>아무리 택시를 자주 타더라도 택시비를 할인받긴 힘들죠. 가치타는 등급제로 운영되는 서비스로, 이용하면 이용할수록 등급은 올라가고 택시비는 줄어들어요.</p>
+				</div>
+			</div>
+			<div><img src="common/img/main/content4.png" alt="" /></div>
+		</div>
+	</div>
+	<div class="content_06 mcard">
+		<div>
+			<div>
+				<h3>처음 만나는 사람과<br /> 비용을 나누는 것이<br /> 부담되지 않을까요?</h3>
+				<div>
+					<p>걱정하지 말아요. 가치타는 만나기만 해도, 목적지에 도착하고 내리기만 해도 자동으로 비용이 결제 되는 자동 결제 시스템이 되어있어서 동승자와 더 이상의 대화는 필요하지
+						않아요.</p>
+				</div>
+			</div>
+			<div><img src="common/img/main/content5.png" alt="" /></div>
+		</div>
+	</div>
+	<div class="content_07 mcard">
+		<div>
+			<div>
+				<h3>비용을 어떻게<br /> 나누는 것이 좋을까요?</h3>
+				<div>
+					<p>가치타에 목적지를 선택해서 올리면 그 노선은 내가 주인이에요. 내가 받고 싶은 금액을 얼마든지 조절할 수 있어요. 그런데, 너무 비싸면 가치타기 부담되겠죠?</p>
+				</div>
+			</div>
+			<div><img src="common/img/main/content6.png" alt="" /></div>
+		</div>
+	</div>
+	<div class="content_08 mcard">
+		<div>
+			<div>
+				<h3>안심하세요.<br /> 실시간 모니터링하고있어요.</h3>
+				<div>
+					<p>가치타는 사용자의 안전을 최우선적으로 생각합니다. 비상신고센터에서 항상 모니터링하고 있어요. 위급 상황 발생 시 바로 신고해주세요.</p>
+				</div>
+			</div>
+			<div><img src="common/img/main/content7.png" alt="" /></div>
+		</div>
+	</div>
+	<div class="content_09 mcard">
+		<div>
+			<div>
+				<h3>낯선 사람과의 매칭?<br /> 이미 중고거래에서<br /> 우리는 경험해 봤어요.</h3>
+				<div>
+					<p>모르는 사람과 함께 이동한다는 것이 걱정될 수 있어요. 하지만 우리는 이미 중고거래와 같이 주변에서 많은 경험을 해봤어요. 가치타는 실명인증과 주 사용 카드 등록을 마친
+						사용자만 이용할 수 있어요. 또한 동승자 성별 선택 등을 통해 안심 매칭을 유도합니다.</p>
+				</div>
+			</div>
+			<div><img src="common/img/main/content8.png" alt="" /></div>
+		</div>
+	</div>
+	<div class="content_10 mcard">
+		<div>
+			<div>
+				<h3>이용하면 이용할수록<br /> 환경이 보호된다고?</h3>
+				<div>
+					<p>우리나라는 물론 세계적으로 탄소중립을 위해 노력하고 있어요. 가치타를 활발하게 이용하면 도로 위 이동 차량이 효율적으로 움직이게 돼요. 이동 효율을 높이며 탄소 배출 절감에
+						기여할 수 있어요. 그렇다면 우리 지구는 더욱더 살기 좋아지겠죠?</p>
+				</div>
+			</div>
+			<div><img src="common/img/main/content9.png" alt="" /></div>
+		</div>
+	</div>
+	<div class="content_11">
+		<div>
+			<h3>자주 묻는 질문</h3>
+			<div>
+				<div class="qna">
+					<a class="qna_text b1_b" data-bs-toggle="collapse" href="#toggle_content1" role="button"
+						aria-expanded="false" aria-controls="collapseExample">
+						<div class="qna_q" id="1" onclick="toggle(this.id);">
+							<div class="qna_text b1_b">요금 계산은 어떻게 하나요?</div>
+							<img class="toggle_img" id="toggle_img1" class="icon_caret_down"
+								src="common/img/main/icon_caret_down.svg" alt="icon_caret_down" />
+						</div>
+					</a>
+					<div class="b2_m w672 collapse gray200_top_border content_ans" id="toggle_content1">
+						택시요금은 노선생성자가 직접 계산하며, 노선신청자는 가치타 앱을 통하여 생성자에게 가치타포인트를 양도합니다. 포인트는 목적지에 도착하면 자동양도가 되며, 이동 중에도 바로양도
+						버튼을 통하여 포인트를 양도할 수 있습니다.
+					</div>
+				</div>
+				<div class="qna">
+					<a class="qna_text b1_b" data-bs-toggle="collapse" href="#toggle_content2" role="button"
+						aria-expanded="false" aria-controls="collapseExample">
+						<div class="qna_q" id="2" onclick="toggle(this.id);">
+							<div class="qna_text b1_b">카드 등록은 필수인가요?</div>
+							<img class="toggle_img" id="toggle_img2" class="icon_caret_down"
+								src="common/img/main/icon_caret_down.svg" alt="icon_caret_down" />
+						</div>
+					</a>
+					<div class="b2_m w672 border0 collapse gray200_top_border content_ans" id="toggle_content2">
+						카드를 등록하는 이유는 보유한 포인트가 노선생성자에게 지불한 만큼 보유하고 있다면 필요하지 않지만 지불해야 할 포인트가 부족하다면 등록된 카드로 우선 포인트충전이 되면
+						매칭신청이 가능합니다.
+					</div>
+				</div>
+				<div class="qna">
+					<a class="qna_text b1_b" data-bs-toggle="collapse" href="#toggle_content3" role="button"
+						aria-expanded="false" aria-controls="collapseExample">
+						<div class="qna_q" id="3" onclick="toggle(this.id);">
+							<div class="qna_text b1_b">매칭 후 택시가 잡히지 않아요.</div>
+							<img class="toggle_img" id="toggle_img3" class="icon_caret_down"
+								src="common/img/main/icon_caret_down.svg" alt="icon_caret_down" />
+						</div>
+					</a>
+					<div class="b2_m w672 border0 collapse gray200_top_border content_ans" id="toggle_content3">
+						택시가 잡히지 않는 경우는 취소요청을 해서 생성자와 신청자의 모두 동의를 받으면 매칭이 취소가 됩니다.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div>
+			<dl>
+				<dt><img src="common/img/main/copyright_logo.svg" alt="" /></dt>
+				<dd><span class="coname">주식회사 가치</span></dd>
+				<dd><span>주소 </span>대구 동구 팔공로 227 대구 텍스타일 콤플렉스 815호</dd>
+				<dd><span>사업자 대표자명 </span>송우일</dd>
+				<dd><span>사업자 등록번호</span> 131-86-71725</dd>
+				<dd><span>고객센터</span> 053-982-4516</dd>
+				<dd><span>이메일문의</span> <a class="atag" href="mailto:gachita@gachita.kr"
+						title="문의메일보내기">gachita@gachita.kr</a></dd>
+				<dd><span>서비스 이용</span> <a class="atag" target="_BLANK" href="/privacy/privacy01.html"
+						title="서비스 이용 보기">약관보기</a></dd>
+				<dd><span>개인정보 수집 및 이용</span> <a class="atag" target="_BLANK"
+						href="/privacy/privacy02.html" title="개인정보 수집 및 이용 보기">약관보기</a></dd>
+				<dd><span>위치정보 수집 및 이용</span> <a class="atag" target="_BLANK"
+						href="/privacy/privacy03.html" title="위치정보 수집 및 이용 보기">약관보기</a></dd>
+				<dd>Copyright © Gachi. All rights reserved.</dd>
+			</dl>
+			<div>
+				<a href="https://instagram.com/gachita.offical" target="_blank">
+					<img src="common/img/main/icon_sns_insta.svg" alt="" />
+				</a>
+				<a href="https://youtu.be/N5N8QGMezMc" target="_blank">
+					<img src="common/img/main/icon_sns_youtub.svg" alt="" />
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

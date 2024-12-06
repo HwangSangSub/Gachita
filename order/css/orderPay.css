@@ -1,0 +1,146 @@
+	body{
+		font-family:나눔고딕, 돋움, Tahoma, Geneva, sans-serif;		
+		font-size:14px;
+		padding:0;
+		margin:0;
+		background: #fafafa;
+		background-repeat: repeat-x;	
+		width:99%;
+		
+		a{text-decoration:none;}
+		a:link		{color:#000; cursor:pointer;} 
+		a:visited 	{color:#000; cursor:pointer;} 
+		a:hover		{color:#c8c8c8; cursor:pointer;} 
+		a:active	{color:#000; cursor:pointer;}
+		
+	}
+	
+	.TitleBar{
+		/*
+		width:95%;
+		margin:0;
+		*/
+		
+		margin-left:18px;
+		margin-right:18px;
+		margin-bottom:0;
+		color:#000;
+		border-bottom:1px solid #d2def0;
+		height:24px;
+		}
+	
+	@-webkit-keyframes zoom {
+	 from {
+	   opacity: 0.1;
+	   font-size: 100%;
+	 }
+	 to {
+	   opacity: 1.0;
+	   font-size: 130%;
+	 }
+	}
+	
+	.selectList{
+		margin:0 auto;
+		width:95%;
+	}
+	.selectBar{
+		padding:6px 3px;
+	}
+	
+	.selectBar label{
+		padding:13px 0;
+		color:#374c83;
+		font-weight:bold;
+		display:block;
+	}
+	.selectList ul li label+p{
+		margin:0;
+		font-size:20px;
+		font-weight:bold;
+		
+	}
+	.selectBar input{font-size:17px;}
+	.selectBar input[type="tel"],
+	.selectBar input[type="text"]{
+		padding:8px;
+		width:95%;
+		text-align:left;
+		border:1px solid #EEEEEE;
+		/* 테두리 곡선처리 관련 */
+		border-radius:5px;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		-o-border-radius:5px;
+		background:#EEEEEE;
+		/* 그림자
+		box-shadow:inset 0 0 5px #ccc; 
+		-moz-box-shadow:inset 0 0 5px #ccc; 
+		-webkit-box-shadow:inset 0 0 5px #ccc; */
+	}
+	
+	
+	.selectBar input[type="tel"]:focus,
+	.selectBar input[type="text"]:focus{
+		border:1px solid #6699ff;
+		
+	}
+	
+	.selectBar input[type="button"]{
+		padding:10px 0;
+		margin:5px 0;
+		width:100%;
+		background-color:#0066ff;
+		color:#fff;
+		font-weight:bold;
+		
+		border:0px;
+		border-radius:5px;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		-o-border-radius:5px;
+	}
+	
+	.selectBar span.g{
+		color:#999;
+		font-weight:normal;
+	}
+	.selectBar span.r{
+		color:#ff6600;
+		font-weight:normal;
+	}
+	
+	.selectBar span{
+		padding:3px;
+	}
+	.selectBar .listInput{
+		width:90px;
+		text-align:left;
+	}
+	
+	.selectBar .largeInput{
+		width:100%;
+		text-align:left;
+	}	
+	
+	.selectBar div {
+		float:right;
+		padding:0;
+		margin:0;
+	}
+	
+	.selectBar select{
+		width:140px; 
+		font-size:15px;
+	}
+	
+	.selectList ul{
+		list-style:none;
+		margin:5px; 
+		padding:0;
+	}
+	a, img, input, textarea, select, button {
+		text-decoration: none;
+		outline: none;
+		select-dummy: expression( this.style.wordWrap="normal",this.hideFocus=true);
+	}

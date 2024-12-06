@@ -1,0 +1,7 @@
+<?PHP
+	$password1 = '(주)가치 가치타';
+	// 256 bit 키를 만들기 위해서 비밀번호를 해시해서 첫 32바이트를 사용합니다.
+	$password = substr(hash('sha256', $password1, true), 0, 32);
+	$iv = chr(0x0).chr(0x0).chr(0x0).chr(0x0).chr(0x0).chr(0x0).chr(0x0).chr(0x0).chr(0x0).chr(0x0).chr(0x0).chr(0x0).chr(0x0).chr(0x0).chr(0x0).chr(0x0);
+
+?>
